@@ -1,7 +1,7 @@
 package com.dagatsoin.plugins.mapbox;
 
-import android.annotation.NonNull;
-import android.annotation.Nullable;
+// import android.annotation.NonNull;
+// import android.annotation.Nullable;
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import android.app.Activity;
@@ -88,7 +88,7 @@ public class CDVMapbox extends CordovaPlugin implements ViewTreeObserver.OnScrol
     private static final String MAPBOX_ACCESSTOKEN_RESOURCE_KEY = "mapbox_accesstoken";
     private CordovaWebView _webView;
     private Activity activity;
-    @Nullable MapLayout mapLayout;
+    @Nullable public MapLayout mapLayout;
 
     PluginLayout pluginLayout;
 
