@@ -1,5 +1,43 @@
-repositories {
-    mavenCentral()
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+
+        // Extract the token from res/values/strings.xml
+        def stringsFile = file("src/main/res/values/strings.xml")
+        def mapboxToken = ""
+        if (stringsFile.exists()) {
+            def strings = new XmlParser().parse(stringsFile)
+            def tokenNode = strings.string.find { it.@name == 'mapbox_accesstoken' }
+            if (tokenNode != null) {
+                mapboxToken = tokenNode.text()
+                println "Mapbox token loaded from strings.xml"
+            } else {
+                println "'mapbox_accesstoken' not found in strings.xml"
+            }
+        } else {
+            println "strings.xml file not found at expected path"
+        }
+
+        // Mapbox Maven repo with authentication
+        maven {
+            url 'https://api.mapbox.com/downloads/v2/releases/maven'
+            authentication {
+                basic(BasicAuthentication)
+            }
+            credentials {
+                username = "mapbox"
+                password = mapboxToken
+            }
+        }
+    }
 }
 
 dependencies {
