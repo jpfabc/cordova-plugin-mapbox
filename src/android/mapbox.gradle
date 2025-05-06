@@ -8,7 +8,7 @@ repositories {
         }
         credentials {
             username = "mapbox"
-            password = "pk.eyJ1IjoicGluZ2FzbWFjaGluZSIsImEiOiJjazhyNnE3cGcwMDl6M2xxZjFrM2ZodjR6In0.EHn0Ngca_yOtIfpzAtF7tA"
+            password = "sk.eyJ1IjoianBmYWJjOTYiLCJhIjoiY21hY21vczA0MDQ5OTJsc2I1aDI2bXB4YSJ9.gzCZ7zO_8Yn7kNLSfem2yA"
         }
     }
 }
