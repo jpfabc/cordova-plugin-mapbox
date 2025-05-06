@@ -17,5 +17,6 @@ dependencies {
     implementation 'com.getkeepsafe.relinker:relinker:1.4.4'  // To fix the missing library
     implementation 'com.cocoahero.android:geojson:1.0.1@jar'
     implementation 'com.mapbox.mapboxsdk:mapbox-android-sdk:9.6.2' // Updated Mapbox SDK
+    implementation 'com.google.android.gms:play-services-gcm:12.+'
     // implementation 'com.mapbox.mapboxsdk:mapbox-android-plugin-annotation-v8:0.7.0' // Comment this out to avoid version conflicts
 }
