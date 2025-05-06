@@ -3,7 +3,9 @@
     "module": "CommonJS",
     "outDir": "www/",
     "types": ["cordova", "geojson"],
-    "declaration": true 
+    "declaration": true,
+    "target": "ES6",
+    "esModuleInterop": true
   },
   "compileOnSave": true,
   "files": ["src/js/cordova-plugin-mapbox.ts"]
