@@ -12,7 +12,7 @@ import android.view.View;
 import android.annotation.NonNull;
 import android.annotation.Nullable;
 import androidx.annotation.Nullable;
-import androidx.annotation-NonNull;
+import androidx.annotation.NonNull;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Canvas;

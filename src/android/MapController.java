@@ -3,7 +3,7 @@ package com.dagatsoin.plugins.mapbox;
 import android.annotation.NonNull;
 import android.annotation.Nullable;
 import androidx.annotation.Nullable;
-import androidx.annotation-NonNull;
+import androidx.annotation.NonNull;
 import android.animation.TimeInterpolator;
 import android.animation.ValueAnimator;
 import android.app.Activity;
