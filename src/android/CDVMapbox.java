@@ -7,7 +7,7 @@ import androidx.annotation.NonNull;
 import android.app.Activity;
 import android.content.res.Resources;
 import android.graphics.PointF;
-import android.support.annotation.Nullable;
+// import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.ViewTreeObserver;
 

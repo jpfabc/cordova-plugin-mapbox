@@ -16,8 +16,8 @@ import android.graphics.Canvas;
 import android.graphics.PointF;
 import android.graphics.drawable.BitmapDrawable;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+// import android.support.annotation.NonNull;
+// import android.support.annotation.Nullable;
 import android.util.Base64;
 import android.view.MotionEvent;
 import android.view.animation.BounceInterpolator;
