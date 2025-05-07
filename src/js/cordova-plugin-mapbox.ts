@@ -751,10 +751,10 @@ function getAllChildren(el: HTMLElement) {
         const style = window.getComputedStyle(node)
         const visibilityCSS = style.getPropertyValue('visibility')
         const displayCSS = style.getPropertyValue('display')
-        const opacityCSS = style.getPropertyValue('opacity') ?? 1
+        const opacityCSS = style.getPropertyValue('opacity') ?? '1'
         if (
           displayCSS !== 'none'
-          && opacityCSS > 0
+          && parseInt(opacityCSS) > 0
           && visibilityCSS !== 'hidden'
         ) {
           if (node.hasChildNodes()) {
